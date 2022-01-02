@@ -1,0 +1,8 @@
+[user]
+	email = 11492152+globberwops@users.noreply.github.com
+	name = Martin Stump
+	signingkey = 414F357505C55850
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true

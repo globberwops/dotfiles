@@ -1,0 +1,5 @@
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ca='config add'
+alias cau='config add --update'
+alias ccmsg='config commit -m'
+alias cst='config status'
