@@ -4,8 +4,12 @@ source "$HOME/.antigen/antigen.zsh"
 antigen use oh-my-zsh
 
 if [[ "$REMOTE_CONTAINERS" != "true" ]]; then
-  zstyle :omz:plugins:ssh-agent identities id_github
+  zstyle :omz:plugins:keychain agents gpg,ssh
+  zstyle :omz:plugins:keychain identities id_github 05C55850
+  zstyle :omz:plugins:keychain options --quiet
+  antigen bundle gpg-agent
   antigen bundle ssh-agent
+  antigen bundle keychain
 fi
 
 antigen bundle command-not-found
